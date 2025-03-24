@@ -21,7 +21,7 @@ public class comparison {
 
         sb.reverse();
         System.out.println("After Reverse: " + sb);
-        sb.reverse(); // Reversing back
+        sb.reverse(); 
 
         sb.deleteCharAt(5);
         System.out.println("After DeleteCharAt: " + sb);
