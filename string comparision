@@ -1,0 +1,44 @@
+package bm23ai165;
+
+public class comparison {
+    public static void main(String[] args) {
+        StringBuffer sb = new StringBuffer("Hello World");
+        String str1 = "Hello";
+        String str2 = "hello";
+        System.out.println("String Comparison: " + str1.equalsIgnoreCase(str2));
+
+        System.out.println("Length of StringBuffer: " + sb.length());
+
+        System.out.println("Capacity of StringBuffer: " + sb.capacity());
+
+        sb.append(" Java");
+        System.out.println("After Append: " + sb);
+
+        sb.insert(6, "Beautiful ");System.out.println("After Insert: " + sb);
+
+        sb.delete(6, 16);
+        System.out.println("After Delete: " + sb);
+
+        sb.reverse();
+        System.out.println("After Reverse: " + sb);
+        sb.reverse(); // Reversing back
+
+        sb.deleteCharAt(5);
+        System.out.println("After DeleteCharAt: " + sb);
+
+        char ch = sb.charAt(4);
+        System.out.println("Character at index 4: " + ch);
+
+        sb.replace(6, 11, "Java");
+        System.out.println("After Replace: " + sb);
+
+        int index = sb.indexOf("Java");
+        System.out.println("Index of 'Java': " + index);
+
+        int lastIndex = sb.lastIndexOf("o");
+        System.out.println("Last Index of 'o': " + lastIndex);
+
+        sb.setCharAt(0, 'h');
+        System.out.println("After SetCharAt: " + sb);
+     }
+}
